@@ -1,0 +1,128 @@
+:root {
+    --background-primary_color: hsl(185, 75%, 39%);
+    --background-pri-sec_color: hsl(229, 23%, 23%);
+    --background-pri-third_color: hsl(227, 10%, 46%);
+
+    --background-neutral-color: hsl(0, 0%, 59%);
+
+    --font-size: 18px;
+    --fw-normal: 400;
+    --fw-bold: 700;
+    --font-family: 'Kumbh Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--background-primary_color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    text-align: center;
+    overflow: hidden;
+}
+
+.pattern {
+    position: absolute;
+}
+
+.top-pattern {
+    transform: translate(-47%, -46%) rotate(15deg);
+}
+
+.bottom-pattern {
+    transform: translate(46%, 53%) rotate(-1deg);
+}
+
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0.1rem 0.1rem 24px var(--background-pri-third_color);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.profile-image img {
+    position: relative;
+    bottom: 57px;
+    border: 5px solid white;
+    border-radius: 100%;
+}
+
+/* Middle-section */
+
+.profile--section {
+    position: relative;
+    bottom: 43px;
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+}
+
+.profile-name {
+    font-size: var(--font-size);
+    color: var(--background-pri-sec_color);
+}
+
+.profile-age {
+    padding-left: 5px;
+    color: var(--background-pri-third_color);
+}
+
+.profile-location {
+    padding-top: 10px;
+    font-size: 1rem;
+    color: var(--background-pri-third_color);
+}
+
+/* Bottom section */
+.bottom-section {
+    display: flex;
+    padding: 20px 0;
+    margin-top: 15px;
+    border-top: 1px solid hsl(227, 10%, 46%, 0.2);
+}
+
+.status {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats {
+    font-size: var(--font-size);
+    color: var(--background-pri-sec_color);
+    font-weight: var(--fw-bold);
+    margin-bottom: 5px;
+}
+
+.stat__name {
+    font-size: 0.75rem;
+    color: var(--background-neutral-color);
+}
+
+/* Footer */
+@media screen and (min-width: 1440px) {
+
+    body{
+        margin: 20px;
+    }
+    
+    .top-pattern {
+        transform: translate(-78%, -57%) rotate(151deg);
+    }
+
+    .bottom-pattern {
+        transform: translate(77%, 55%) rotate(-73deg);
+    }
+}
