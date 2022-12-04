@@ -27,20 +27,11 @@ body {
     font-size: var(--font-size);
     text-align: center;
     overflow: hidden;
+    background-image: url(images/bg-pattern-top.svg),
+        url(images/bg-pattern-bottom.svg);
+    background-position: right 50vw bottom 45vh, left 50vw top 49vh;
+    background-repeat: no-repeat, no-repeat;
 }
-
-.pattern {
-    position: absolute;
-}
-
-.top-pattern {
-    transform: translate(-47%, -46%) rotate(15deg);
-}
-
-.bottom-pattern {
-    transform: translate(46%, 53%) rotate(-1deg);
-}
-
 
 .card {
     background-color: white;
@@ -109,20 +100,4 @@ body {
 .stat__name {
     font-size: 0.75rem;
     color: var(--background-neutral-color);
-}
-
-/* Footer */
-@media screen and (min-width: 1440px) {
-
-    body{
-        margin: 20px;
-    }
-    
-    .top-pattern {
-        transform: translate(-78%, -57%) rotate(151deg);
-    }
-
-    .bottom-pattern {
-        transform: translate(77%, 55%) rotate(-73deg);
-    }
 }
